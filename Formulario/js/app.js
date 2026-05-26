@@ -1,7 +1,8 @@
+// Obtenemos los elementos del formulario del html 
 const inputCorreo = document.getElementById("CorreoElectronico");
 const errorCorreo = document.getElementById("errorCorreo");
 const inputComentario = document.getElementById("Comentario");
-
+// Validación de correo electrónico
 inputCorreo.addEventListener("focus", function () {
   inputCorreo.style.backgroundColor = "#fffbcc";
   errorCorreo.innerText = "";
@@ -11,7 +12,7 @@ inputCorreo.addEventListener("blur", function () {
   inputCorreo.style.backgroundColor = "#fff";
   inputCorreo.style.borderColor = "#ced4da";
 });
-
+// Validación de comentario
 inputComentario.addEventListener("focus", function () {
   inputComentario.style.backgroundColor = "#e8f0fe";
 });
