@@ -1,0 +1,24 @@
+// Página del héroe
+<h1>{{ name() }}</h1>
+
+<dl>
+  <dt>Nombre:</dt>
+  <dd>{{ name() }}</dd>
+
+  <dt>Edad:</dt>
+  <dd>{{ age() }}</dd>
+
+  <dt>Método:</dt>
+  <dd>{{ getHeroDescription() }}</dd>
+
+  <dt>Capitalizado:</dt>
+  <dd>{{ name().toUpperCase() }}</dd>
+</dl>
+// Estos son los botones que permiten cambiar el nombre y la edad del héroe, así como resetear el formulario
+<button (click)="changeHero()" class="btn btn-primary mx-2">
+  Cambiar nombre
+</button>
+
+<button (click)="changeAge()" class="btn btn-primary">Cambiar edad</button>
+
+<button (click)="resetForm()" class="btn btn-primary mx-2">Reset</button>
